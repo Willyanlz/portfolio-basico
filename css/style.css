@@ -46,6 +46,19 @@ body {
 .card {
     background-color: var(--color-white);
     padding: 1rem;
+
+    .title-card{
+        text-transform: uppercase;
+        color: var(--color-destaque);
+        font-weight: 700;
+        transition: text-shadow 0.2s;
+    }
+
+    &:hover{
+        .title-card{
+            text-shadow: rgba(150, 0, 150, 0.3) 0px 0px 15px;
+        }
+    }
 }
 
 /************** WIDGET 1*/
@@ -71,6 +84,18 @@ body {
     gap: 24px;
 }
 
+@keyframes marcador {
+    50% {
+        border-right: transparent;
+    }
+}
+
+@keyframes texto {
+    0% {
+        width: 0;
+    }
+}
+
 .sobre{
     display: flex;
     flex-direction: column;
@@ -79,7 +104,11 @@ body {
     gap: 1rem;
     .span-sobre{
         font-size: 1.5rem;
-        font-weight: 500;
+        width: 10ch;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 4px solid;
+        animation: texto steps(10) 2s, marcador 1s linear infinite;
     }
     .box-desc {
         display: flex;
@@ -238,6 +267,18 @@ body {
     &:hover, &:focus, &:active {
         box-shadow: rgba(150, 0, 150, 0.9) 0px 0px 12px 4px;
     }
+
+    a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:active{
+            text-decoration: none;
+        }
+    }
 }
 
 .box-social i {
@@ -252,6 +293,39 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    &:hover{        
+        .skills-icons .fa-html5 {
+            color: #e34f26;
+        }
+        
+        .skills-icons .fa-css3-alt {
+            color: #1572b6;
+        }
+        
+        .skills-icons .fa-js {
+            color: #f7df1e;
+        }
+        
+        .skills-icons .fa-bootstrap {
+            color: #7952b3;
+        }
+        
+        .skills-icons .fa-angular {
+            color: #DE002D;
+        }
+        
+        .skills-icons .fa-java {
+            color: #0D89C6;
+        }
+        
+        .skills-icons .fa-wordpress {
+            color: #28799E;
+        }
+        
+        .skills-icons .fa-github {
+            color: #181717;
+        }
+    }
 }
 
 .content-skills {
@@ -282,40 +356,10 @@ body {
 .skills-icons i {
     color: var(--color-black);
     font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-.skills-icons i:hover {
-    cursor: pointer;
-}
-
-/* Cores específicas para cada ícone das skills*/
-.skills-icons .fa-html5:hover {
-    color: #e34f26;
-}
-
-.skills-icons .fa-css3-alt:hover {
-    color: #1572b6;
-}
-
-.skills-icons .fa-js:hover {
-    color: #f7df1e;
-}
-
-.skills-icons .fa-bootstrap:hover {
-    color: #7952b3;
-}
-
-.skills-icons .fa-angular:hover {
-    color: #DE002D;
-}
-
-.skills-icons .fa-java:hover {
-    color: #0D89C6;
-}
-
-.skills-icons .fa-github:hover {
-    color: #181717;
+    transition: color 0.2s;
+    &:hover {
+        transform: scale(1.5);
+    }
 }
 
 /************** WIDGET 3*/
