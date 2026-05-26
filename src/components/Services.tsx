@@ -36,8 +36,10 @@ export default function Services() {
             <div className="service-icon">
               <i className={s.icon}></i>
             </div>
-            <strong>{s.title}</strong>
-            <span>{s.desc}</span>
+            <div className="service-info">
+              <strong>{s.title}</strong>
+              <span>{s.desc}</span>
+            </div>
           </div>
         ))}
       </div>
