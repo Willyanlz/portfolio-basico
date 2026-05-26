@@ -479,6 +479,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: center;
 }
 
 .skill-item {
@@ -486,12 +487,14 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.6rem 0.75rem;
+  padding: 0.6rem 0.7rem;
   border-radius: var(--radius-sm);
   border: 1px solid transparent;
   transition: all 0.3s;
   cursor: default;
-  min-width: 62px;
+  min-width: 58px;
+  width: calc(20% - 0.4rem);
+  max-width: 72px;
 }
 
 .skill-item:hover {
@@ -523,6 +526,8 @@ body {
 .skill-item:hover .fa-java { color: #0ea5e9; }
 .skill-item:hover .fa-wordpress { color: #22c55e; }
 .skill-item:hover .fa-github { color: var(--text); }
+.skill-item:hover .fa-telegram { color: #26a5e4; }
+.skill-item:hover .fa-bolt { color: #facc15; }
 .skill-item:hover .fa-robot { color: var(--accent-light); }
 
 /* =========================================================

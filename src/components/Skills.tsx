@@ -8,6 +8,8 @@ export default function Skills() {
     { icon: "fab fa-html5", label: "HTML" },
     { icon: "fab fa-css3-alt", label: "CSS" },
     { icon: "fab fa-bootstrap", label: "Bootstrap" },
+    { icon: "fas fa-bolt", label: "Automação (n8n)" },
+    { icon: "fab fa-telegram", label: "Bot Telegram" },
     { icon: "fas fa-robot", label: "Inteligência Artificial" },
   ];
 
