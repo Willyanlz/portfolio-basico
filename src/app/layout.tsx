@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     "criação de site profissional",
     "loja virtual",
     "sistema de gestão",
+    "Willyan Genaro desenvolvedor",
+    "criar site profissional",
   ],
   authors: [{ name: "Willyan Genaro" }],
   creator: "Willyan Genaro",
@@ -65,10 +67,6 @@ export const metadata: Metadata = {
     canonical: "https://labswill.com",
   },
   category: "technology",
-  verification: {
-    // ⬇ Substitua pelo código do Google Search Console quando tiver
-    google: "SEU_CODIGO_GOOGLE_VERIFICATION_AQUI",
-  },
 };
 
 export default function RootLayout({
@@ -83,6 +81,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://labswill.com" />
         <meta name="theme-color" content="#14181c" />
         <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="google-site-verification" content="COLE_AQUI_SEU_CODIGO_DO_GOOGLE_SEARCH_CONSOLE" />
       </head>
       <body>
         <SeoSchema />
