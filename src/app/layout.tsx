@@ -81,7 +81,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://labswill.com" />
         <meta name="theme-color" content="#14181c" />
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="google-site-verification" content="COLE_AQUI_SEU_CODIGO_DO_GOOGLE_SEARCH_CONSOLE" />
+        {/* A verificação do Google Search Console já foi concluída por outro método */}
       </head>
       <body>
         <SeoSchema />
