@@ -21,8 +21,7 @@ export default function About() {
           Olá, sou <strong>Willyan Genaro</strong>, desenvolvedor web há <strong>4 anos</strong>. 
           Ajudo empreendedores e empresas a terem presença digital de verdade — com 
           <strong> sites modernos</strong>, <strong>landing pages que convertem</strong>, 
-          <strong> lojas virtuais completas</strong> e <strong>sistemas sob medida</strong> 
-          para organizar e fazer o negócio crescer.
+          <strong> lojas virtuais completas</strong> e <strong>sistemas sob medida</strong> para organizar e fazer o negócio crescer.
         </p>
         <p className="about-text">
           Meu trabalho é traduzir suas ideias em soluções digitais funcionais, bonitas e que 
