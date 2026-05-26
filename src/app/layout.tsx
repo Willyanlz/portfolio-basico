@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import SeoSchema from "./seo-schema";
 
@@ -81,6 +82,19 @@ export default function RootLayout({
         <link rel="canonical" href="https://labswill.com" />
         <meta name="theme-color" content="#14181c" />
         <meta name="mobile-web-app-capable" content="yes" />
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PW0374VXNY"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PW0374VXNY');
+          `}
+        </Script>
         {/* A verificação do Google Search Console já foi concluída por outro método */}
       </head>
       <body>
