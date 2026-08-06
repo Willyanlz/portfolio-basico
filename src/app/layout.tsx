@@ -67,6 +67,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://labswill.com",
   },
+  // favicons ficam aqui, não como <link> manual no head
+  icons: {
+    icon: [
+      { url: "/image/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   category: "technology",
 };
 
@@ -78,8 +86,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href="/image/favicon.svg" type="image/svg+xml" />
-        <link rel="canonical" href="https://labswill.com" />
         <meta name="theme-color" content="#14181c" />
         <meta name="mobile-web-app-capable" content="yes" />
         {/* Google Analytics */}
