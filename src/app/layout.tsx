@@ -50,10 +50,10 @@ export const metadata: Metadata = {
     siteName: "Portfólio Willyan Genaro",
     images: [
       {
-        url: "/image/perfil.jpeg",
-        width: 500,
-        height: 500,
-        alt: "Willyan Genaro - Desenvolvedor Web",
+        url: "/image/labswill.png",
+        width: 1200,
+        height: 630,
+        alt: "Labswill - Willyan Genaro Desenvolvedor Web",
       },
     ],
   },
@@ -62,12 +62,11 @@ export const metadata: Metadata = {
     title: "Willyan Genaro | Desenvolvedor Web",
     description:
       "Desenvolvedor web há 4 anos. Sites, landing pages, e-commerces e sistemas.",
-    images: ["/image/perfil.jpeg"],
+    images: ["/image/labswill.png"],
   },
   alternates: {
     canonical: "https://labswill.com",
   },
-  // favicons ficam aqui, não como <link> manual no head
   icons: {
     icon: [
       { url: "/image/favicon.svg", type: "image/svg+xml" },
@@ -88,7 +87,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#14181c" />
         <meta name="mobile-web-app-capable" content="yes" />
-        {/* Google Analytics */}
+        <link rel="preload" as="image" href="/image/labswill.png" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PW0374VXNY"
           strategy="afterInteractive"
@@ -101,7 +100,6 @@ export default function RootLayout({
             gtag('config', 'G-PW0374VXNY');
           `}
         </Script>
-        {/* A verificação do Google Search Console já foi concluída por outro método */}
       </head>
       <body>
         <SeoSchema />
