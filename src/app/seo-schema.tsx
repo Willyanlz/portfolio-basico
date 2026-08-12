@@ -4,7 +4,7 @@ export default function SeoSchema() {
     "@type": "Person",
     name: "Willyan Genaro",
     url: "https://labswill.com",
-    image: "https://labswill.com/image/perfil.jpeg",
+    image: "https://labswill.com/image/labswill.png",
     jobTitle: "Desenvolvedor Web",
     description:
       "Desenvolvedor web há 4 anos, especializado em criação de sites, landing pages, e-commerces e sistemas de gestão empresarial.",
